@@ -1,4 +1,5 @@
-﻿#include <iostream>
+/*Тема - основи програмування на С++. Завдання - вирішення функції у при різних значеннях z*/
+#include <iostream>
 #include <cmath>
 
 using namespace std;
@@ -27,3 +28,4 @@ int main() {
 
 	return 0;
 }
+
