@@ -1,4 +1,6 @@
-﻿# include <iostream>
+/*Тема - вказівники в мові С++. Завдання - Створити масив вказівників на окремі слова, посортувати 
+їх за довжинами (у векторі). Вивести посортовані слова на екран.*/
+# include <iostream>
 # include <string>
 # include <vector>
 # include <algorithm>
@@ -45,6 +47,7 @@ int main() {
 cout << endl;
 return 0;
 }
+
 
 
 
