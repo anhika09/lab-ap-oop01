@@ -1,4 +1,6 @@
-﻿#include <iostream>
+/*Тема - рядки в мові програмування С++. Завдання - ввести з клавіатури своє прізвище, ім'я та по 
+батькові як одне текстове дане. Вивести найдовше слово на екран.*/
+#include <iostream>
 #include <string>
 #include <sstream>
 #include <cctype>
@@ -45,3 +47,4 @@ int main() {
     cout << "The longest word is: " << longest << endl;
     return 0;
 }
+
