@@ -1,4 +1,6 @@
-﻿#include <iostream>
+/*Тема - оператори циклую. Завдання - обчислення функції із заданими значеннями змінних із використанням 
+різних операторів циклів for(), while(), do while()*/
+#include <iostream>
 #include <cmath>
 #include <iomanip>
 #define N 15
@@ -70,4 +72,5 @@ int main() {
 
 	return 0;
 }
+
 
