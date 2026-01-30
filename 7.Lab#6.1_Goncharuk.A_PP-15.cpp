@@ -1,4 +1,6 @@
-﻿#include <iostream>
+/*Тема - вказівники в мові С++. Завдання  - з клавіатури вводимо динамічний рядок. Перевірити, 
+чи зустрічається у рядку подвоєння літер, *ch - вказівники*/
+#include <iostream>
 
 using namespace std;
 int main() {
@@ -13,4 +15,5 @@ int main() {
 	cout << "\n The number of double letters is:" << count_double << endl;
 
 return 0;
+
 } 
