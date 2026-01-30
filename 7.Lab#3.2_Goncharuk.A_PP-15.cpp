@@ -1,4 +1,5 @@
-﻿#include <iostream>
+/*Тема - оператори циклу. Завдання - обчислення значення функції, перевірка на ввід */
+#include <iostream>
 #include <cmath>
 #include <iomanip>
 
@@ -52,4 +53,5 @@ int main() {
 
 	return 0;
 }
+
 	
