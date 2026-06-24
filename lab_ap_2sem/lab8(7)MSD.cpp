@@ -1,0 +1,51 @@
+/*Example of Radix Sort*/
+#include <iostream>
+using namespace std;
+
+int findMax(int arr[], int n) {
+	int max = arr[0];
+	for (int i = 0; i < n; ++i) {
+		if (arr[i] > max) {
+			max = arr[i];
+		}
+	}
+	return max;
+}
+void printArray(int arr[], int n) {
+	for (int i = 0; i < n; ++i) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+}
+void RadixSort(int arr[], int n) {
+	int max = findMax(arr, n);
+	for (int exp = 1; max / exp > 0; exp *= 10) {
+		int output[10];
+		int count[10] = { 0 };
+		for (int i = 0; i < n; ++i) {
+			count[(arr[i] / exp) % 10]++;
+		}
+		for (int i = 1; i < 10; ++i) {
+			count[i] += count[i - 1];
+		}
+		for (int i = n - 1; i >= 0; --i) {
+			output[count[(arr[i] / exp) % 10] - 1] = arr[i];
+			count[(arr[i] / exp) % 10]--;
+		}
+		for (int i = 0; i < n; ++i) {
+			arr[i] = output[i];
+		}
+		cout << "(exp = " << exp << " ) Array: ";
+		printArray(arr, n);
+	}
+}
+int main() {
+	int arr[] = { 170, 45, 13, 205, 67, 12, 5, 123, 22 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	cout << "--- Radix Sort --- \nOrigin array: ";
+	printArray(arr, n);
+	RadixSort(arr, n);
+	cout << "\nSorted array: ";
+	printArray(arr, n);
+	return 0;
+}
