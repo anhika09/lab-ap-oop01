@@ -1,0 +1,6 @@
+LIBRARY Dll2.Math.dll
+EXPORTS
+ConvertLength @1
+CalcPolynom @2
+TrapezoidArea @3
+TrapezoidRadius @4
